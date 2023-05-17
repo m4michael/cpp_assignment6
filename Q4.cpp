@@ -38,7 +38,7 @@ else{
     int minB2=INT_MAX;
 
     for(int i=0;i<n;i++){
-        if(i!=index1 && a[i]<minA2){
+        if(i!=index1 && a[i]<minA2  && a[i] > minA){
             minA2=a[i];
             index1=i;
         }
@@ -46,7 +46,7 @@ else{
 
     for(int j=0;j<n;j++){
 
-        if(j!=index2 && b[j]<minB2 && b[j]>minA2 ){
+        if(j!=index2 && b[j]<minB2 && b[j]>minB ){
             minB2=b[j];
             index2=j;
         }
